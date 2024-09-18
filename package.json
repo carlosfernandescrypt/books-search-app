@@ -3,7 +3,7 @@
     "start": "concurrently \"npm run angular\" \"npm run backend-init\"",
     "angular": "cd book-favorites-frontend && ng serve",
     "backend-init": "npm run docker-db && sleep 30 && npm run django-migrate && npm run django",
-    "docker-db": "cd book_favorites_backend && docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0 || echo 'MySQL container already running'",
+    "docker-db": "cd book_favorites_backend && docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0 || echo 'Uma instância MySQL já está em andamento'",
     "django-migrate": "cd book_favorites_backend && python manage.py migrate",
     "django": "cd book_favorites_backend && python manage.py runserver"
   },
