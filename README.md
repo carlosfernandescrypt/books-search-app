@@ -42,7 +42,7 @@ Iniciar o servidor do frontend (Angular).
 Navegue até book-favorite-frontend e inicie o servidor do front-end (Angular)
 
 ```
-cd book-favorite-frontend
+cd book-favorites-frontend
 ```
 ```
 ng serve
