@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { NgFor, NgIf, CommonModule } from '@angular/common'; // Adicione o CommonModule aqui
+import { NgFor, NgIf, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-search-books',
   standalone: true,
-  imports: [FormsModule, NgFor, NgIf, CommonModule], // Inclua CommonModule nos imports
+  imports: [FormsModule, NgFor, NgIf, CommonModule],
   template: `
   <!-- gambiarra pra ocultar um bugzin -->
   <div *ngIf="books.length > 0" class="overlay"></div>
@@ -51,7 +51,7 @@ export class SearchBooksComponent {
     this.http.get(apiUrl).subscribe((response: any) => {
       this.books = response.items.map((book: any) => ({
         ...book,
-        showMore: false // Propriedade para controlar a expansão da descrição
+        showMore: false
       }));
     });
   }
