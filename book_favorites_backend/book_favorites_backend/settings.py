@@ -93,9 +93,6 @@ DATABASES = {
         'PASSWORD': 'test_password',          # Senha do usuário
         'HOST': '127.0.0.1',                  # Host local
         'PORT': '3306',                       # Porta mapeada
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
     }
 }
 
