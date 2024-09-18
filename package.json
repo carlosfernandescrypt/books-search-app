@@ -1,19 +1,13 @@
 {
-  "name": "book-search-app",
-  "version": "1.0.0",
-  "description": "Automação para rodar frontend, backend e MySQL",
-  "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run docker-db\" \"npm run django-init\" \"npm run angular\"",
+    "start": "concurrently \"npm run angular\" \"npm run backend-init\"",
     "angular": "cd book-favorites-frontend && ng serve",
-    "django-migrate": "cd book_favorites_backend  && python manage.py migrate",
-    "docker-db": "docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0 || echo 'MySQL container already running'",
-    "django-init": "cd book_favorites_backend  && python manage.py migrate",
+    "backend-init": "npm run docker-db && sleep 30 && npm run django-migrate && npm run django",
+    "docker-db": "cd book_favorites_backend && docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0 || echo 'MySQL container already running'",
+    "django-migrate": "cd book_favorites_backend && python manage.py migrate",
     "django": "cd book_favorites_backend && python manage.py runserver"
   },
-  "author": "carlosfernandescrypt",
-  "license": "ISC",
   "dependencies": {
-    "concurrently": "^6.5.1"
+    "concurrently": "^6.0.0"
   }
 }
