@@ -83,13 +83,11 @@ export class FavoriteBooksComponent implements OnInit {
     });
   }
 
-  // Extrair tags únicas
   extractUniqueTags() {
     const allTags = this.favorites.flatMap(fav => fav.tags.split(',').map((tag: string) => tag.trim()));
     this.uniqueTags = [...new Set(allTags)]; // Remove tags duplicadas
   }
 
-  // Filtrar livros por tag
   filterByTag() {
     if (this.selectedTag === '') {
       this.filteredFavorites = this.favorites; // Se nenhuma tag for selecionada, exibe todos os livros
