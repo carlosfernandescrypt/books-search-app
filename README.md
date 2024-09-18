@@ -47,7 +47,7 @@ cd book-favorite-frontend
 ```
 ng serve
 ```
-Após isso, inicie um conteiner Docker com uma instancia MySQL (Sinta-se livre para usar qualquer outro)
+Após isso, inicie um container Docker com uma instancia MySQL (Sinta-se livre para usar qualquer outro)
 
 ```
 docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0
