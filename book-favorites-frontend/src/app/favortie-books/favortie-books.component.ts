@@ -85,12 +85,12 @@ export class FavoriteBooksComponent implements OnInit {
 
   extractUniqueTags() {
     const allTags = this.favorites.flatMap(fav => fav.tags.split(',').map((tag: string) => tag.trim()));
-    this.uniqueTags = [...new Set(allTags)]; // Remove tags duplicadas
+    this.uniqueTags = [...new Set(allTags)]; //removr tags duplicadas
   }
 
   filterByTag() {
     if (this.selectedTag === '') {
-      this.filteredFavorites = this.favorites; // Se nenhuma tag for selecionada, exibe todos os livros
+      this.filteredFavorites = this.favorites;
     } else {
       this.filteredFavorites = this.favorites.filter(fav => 
         fav.tags.split(',').map((tag: string) => tag.trim()).includes(this.selectedTag)
