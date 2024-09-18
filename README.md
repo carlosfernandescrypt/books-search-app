@@ -1,6 +1,6 @@
 # Bambu Livros
-> Esse é um projeto de um teste de estágio para o time de desenvolvimento do Coco Bambu. O projeto consiste em um aplicativo onde seja possível pesquisar por livros da Google Books API.
-> Nele, você pode adiiconar um livro aos favoritos, adicionar uma avaliação, uma nota pessoal e tags, e também há a possibilidade de filtrar por livros favoritados por meio das tags.
+> Esse é um case técnico de um teste de estágio para o time de desenvolvimento do Coco Bambu. O projeto consiste em um aplicativo web onde seja possível pesquisar por livros por meio da API do Google Books.
+> Na aplciação, você pode adicionar um livro aos favoritos, adicionar uma avaliação (de 1 a 5), uma nota pessoal e tags, e também há a possibilidade de filtrar os livros favoritados por meio das tags.
 
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/inicial.png" alt="Pagina inicial">
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/pesquisa.png" alt="Página de pesquisa">
@@ -31,13 +31,13 @@ No terminal:
 ```
 npm run start 
 ```
-Aqui ele vai:
+O que será feito aqui:
 Iniciar o banco de dados MySQL via Docker.
 Aplicar as migrações no Django e iniciar o backend.
 Iniciar o servidor do frontend (Angular).
 
 
-## ☕ Em caso de algum erro com o npm run start, tente rodar os projeto manualmente:
+## ☕ Em caso de algum erro com o npm run start, tente rodar o projeto manualmente:
 
 Navegue até book-favorite-frontend e inicie o servidor do front-end (Angular)
 
