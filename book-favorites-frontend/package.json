@@ -1,7 +1,7 @@
 {
   "name": "book-favorites-frontend",
   "version": "0.0.0",
-  "scripts": {
+  "teste": {
     "start": "ng serve --proxy-config proxy.conf.json",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -36,5 +36,13 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
+  },
+    "scripts": {
+    "start": "concurrently \"npm run docker-db\" \"npm run django-init\" \"npm run angular\"",
+    "angular": "cd frontend && ng serve",
+    "django": "cd backend && python manage.py runserver",
+    "django-migrate": "cd backend && python manage.py migrate",
+    "docker-db": "docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0 || echo 'MySQL container already running'",
+    "django-init": "npm run docker-db && sleep 10 && npm run django-migrate && npm run django"
   }
 }
