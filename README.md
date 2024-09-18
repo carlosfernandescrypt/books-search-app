@@ -55,15 +55,19 @@ modificar os dados do banco de dados no settings.py)
 docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0
 ```
 
-Logo após, navegue até book_favorite_back-end faça as migrações do Django e inicie o servidor do back-end.
+Logo após, navegue até book_favorite_back-end faça as migrações do Django e inicie o servidor do back-end (Após iniciar o MySQL, espere 30 segundos antes de fazer as migrações. 
 
+```
+pip install mysqlclient
+```
 ```
 python manage.py migrate
 ```
 ```
 python manage.py runserver
 ```
-
+Navegue até "localhost:4200"
+Caso queira testar a API, ela estará hospedada em localhost:8000/api/favorites
 
 ## 📫 Contribuindo para o projeto
 
