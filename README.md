@@ -1,11 +1,10 @@
-# Bambuu Livros
+# Bambu Livros
+> Esse é um projeto de um teste de estágio para o time de desenvolvimento do Coco Bambu. O projeto consiste em um aplicativo onde seja possível pesquisar por livros da Google Books API.
+> Nele, você pode adiiconar um livro aos favoritos, adicionar uma avaliação, uma nota pessoal e tags, e também há a possibilidade de filtrar por livros favoritados por meio das tags.
 
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/inicial.png" alt="Pagina inicial">
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/pesquisa.png" alt="Página de pesquisa">
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/favoritos.png" alt="Página de favoritos">
-
-> Esse é um projeto de um teste de estágio para o time de desenvolvimento do Coco Bambu. O projeto consiste em um aplicativo onde seja possível pesquisar por livros da Google Books API.
-> Nele, você pode adiiconar um livro aos favoritos, adicionar uma avaliação, uma nota pessoal e tags, e também há a possibilidade de filtrar por livros favoritados por meio das tags.
 
 Tecnologias Utilizadas:
 `Django
@@ -25,7 +24,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## 🚀 Instalando o projeto
 
-Para clonar o repositorio, navegue até a pasta book-search-app e siga estas etapas:
+Após clonar o repositorio, navegue até a pasta book-search-app e siga estas etapas:
 
 No terminal:
 
@@ -48,14 +47,13 @@ cd book-favorite-frontend
 ```
 ng serve
 ```
-Após isso, inicie um conteiner Docker com uma instancia MySQL (Ou qualquer outra de sua preferência, e não se esqueça de 
-modificar os dados do banco de dados no settings.py)
+Após isso, inicie um conteiner Docker com uma instancia MySQL (Sinta-se livre para usar qualquer outro)
 
 ```
 docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root_password -e MYSQL_DATABASE=book_favorites_db -e MYSQL_USER=test_user -e MYSQL_PASSWORD=test_password -p 3306:3306 -d mysql:8.0
 ```
 
-Logo após, navegue até book_favorite_back-end faça as migrações do Django e inicie o servidor do back-end (Após iniciar o MySQL, espere 30 segundos antes de fazer as migrações. 
+Logo após, navegue até a pasta book_favorite_backend, faça as migrações do Django e inicie o servidor do back-end (Após iniciar o MySQL, espere 30 segundos antes de fazer as migrações). 
 
 ```
 pip install mysqlclient
@@ -66,12 +64,12 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-Navegue até "localhost:4200"
+Navegue até "localhost:4200".
 Caso queira testar a API, ela estará hospedada em localhost:8000/api/favorites
 
 ## 📫 Contribuindo para o projeto
 
-Para contribuir com books search, siga estas etapas:
+Para contribuir com o Bambu Livros, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
@@ -83,6 +81,4 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 ## 🤝 Sugestões
 
-Por mais que possa parecer um teste "simples", para mim foi um pouco cansativo, ainda mais por se tratar de uma vaga mais entry level que é um estágio. Entendo que por ser uma área de muita concorrência,
-os filtros devem ser mais rígidos, porém, acredito que muitas pessoas não vão chegar nem a mandar o projeto, perdendo assim uma baita de uma oportunidade, pois nunca tiveram contato com algumas das tecnologias que foram exigidas.
-Porém, posso estar totalmente enganado, não sei como é o critério de seleção. Mas boa sorte para todos nós! <3
+Diminuir um pouquinho o nivél do teste seria uma boa. Por mais que possa parecer um teste "simples", eu achei desafiador. Ainda assim é da forma que eu gosto, ainda mais por se tratar de uma vaga mais entry level que é um estágio. Entendo que por ser uma área de muita concorrência, os filtros devem ser mais rígidos, porém, acredito que muitas pessoas não vão chegar nem a mandar o projeto, perdendo assim uma baita de uma oportunidade, pois nunca tiveram contato com algumas das tecnologias que foram exigidas. Porém, posso estar totalmente enganado, não sei como é o critério de seleção (E estou totalmente aberto a ouvir mais sobre). Mas boa sorte para todos nós! <3
