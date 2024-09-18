@@ -11,7 +11,8 @@
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Você instalou a versão mais recente do `django / angular / docker`
+- Você instalou o concurrently para rodar os scripts automatizados `npm install concurrently`
+- Você instalou as versões mais recentes do `django / angular / docker`
 - Você tem uma máquina `Windows / Linux / Mac`.
 
 ## 🚀 Instalando o projeto
@@ -70,5 +71,6 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 ## 🤝 Sugestões
 
-Por mais que seja um teste "simples", para mim foi um pouco cansativo, ainda mais por se tratar de uma vaga mais entry level que é um estágio. Entendo que por ser uma área de muita concorrência,
-os filtros devem ser mais rígidos, porém, acredito que muitas pessoas não vão chegar nem a mandar o projeto, pois nunca tiveram contato com algumas das tecnologias que foram exigidas.
+Por mais que possa parecer um teste "simples", para mim foi um pouco cansativo, ainda mais por se tratar de uma vaga mais entry level que é um estágio. Entendo que por ser uma área de muita concorrência,
+os filtros devem ser mais rígidos, porém, acredito que muitas pessoas não vão chegar nem a mandar o projeto, perdendo assim uma baita de uma oportunidade, pois nunca tiveram contato com algumas das tecnologias que foram exigidas.
+Porém, posso estar totalmente enganado, não sei como é o critério de seleção. Mas boa sorte para todos nós! <3
