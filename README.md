@@ -5,7 +5,15 @@
 <img src="imagem.png" alt="Página de favoritos">
 
 > Esse é um projeto de um teste de estágio para o time de desenvolvimento do Coco Bambu. O projeto consiste em um aplicativo onde seja possível pesquisar por livros da Google Books API
-> Nele, você pode adiiconar um livro aos favoritos, adicionar uma avaliação, uma nota pessoal e tags, e também há a possibilidade de filtrar por livros favoritados por meio das tags. 
+> Nele, você pode adiiconar um livro aos favoritos, adicionar uma avaliação, uma nota pessoal e tags, e também há a possibilidade de filtrar por livros favoritados por meio das tags.
+
+Tecnologias Utilizadas:
+`Django
+Python
+Angular
+TypeScript
+Docker
+MySQL`
 
 ## 💻 Pré-requisitos
 
