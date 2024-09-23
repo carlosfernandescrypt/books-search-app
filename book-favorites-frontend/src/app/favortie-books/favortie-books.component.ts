@@ -38,7 +38,7 @@ import { NgFor, NgIf, CommonModule } from '@angular/common';
 
             <div class="input-field">
               <label for="tags">Tags:</label>
-              <input id="tags" type="text" [(ngModel)]="favorite.tags" placeholder="(tags)" class="input-tags">
+              <input id="tags" type="text" [(ngModel)]="favorite.tags" placeholder="(tags separadas por vírgula (tag1, tag2, tag3)" class="input-tags">
             </div>
 
             <div class="input-field">
