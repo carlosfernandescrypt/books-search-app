@@ -1,6 +1,6 @@
-# Bambu Livros
-> Esse é um case técnico de um teste de estágio para o time de desenvolvimento do Coco Bambu. O projeto consiste em um aplicativo web onde seja possível pesquisar por livros por meio da API do Google Books.
-> Na aplciação, você pode adicionar um livro aos favoritos, adicionar uma avaliação (de 1 a 5), uma nota pessoal e tags, e também há a possibilidade de filtrar os livros favoritados por meio das tags.
+# Bambu Livros. 
+O projeto consiste em um aplicativo web onde seja possível pesquisar por livros por meio da API do Google Books.
+> Na aplicação, você pode adicionar um livro aos favoritos, adicionar uma avaliação (de 1 a 5), uma nota pessoal e tags, e também há a possibilidade de filtrar os livros favoritados por meio das tags.
 
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/inicial.png" alt="Pagina inicial">
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/pesquisa.png" alt="Página de pesquisa">
@@ -78,9 +78,3 @@ Para contribuir com o Bambu Livros, siga estas etapas:
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-## 🤝 Sugestões
-
-Na minha opnião, acredito que diminuir um pouquinho o nivél do teste seria uma boa. Por mais que possa parecer um teste "simples", eu achei desafiador. Mas para mim não foi nenhum problema, pois eu amo desafios, está da forma que eu gosto. Porém, para quem é novo na área e está buscando uma primeira oportunidade, pode ser um baita desafio.
-
-Além disso, entendo perfeitamente que por ser uma área de muita concorrência, os filtros devem ser mais rígidos, porém, acredito que pessoas excelentes com vontade de aprender possam estar perdendo uma baita de uma oportunidade, pois nunca tiveram contato com algumas das tecnologias que foram exigidas. Mas sei que cada vaga tem seu propósito, e as vezes treinar alguém do absoluto 0 pode não ser a estratégia da empresa naquele momento, também posso estar totalmente enganado, não sei como é o critério de seleção (E estou totalmente aberto a ouvir mais sobre). Mas boa sorte para todos nós!
