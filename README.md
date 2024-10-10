@@ -1,5 +1,5 @@
 # Bambu Livros. 
-O projeto consiste em um aplicativo web onde seja possível pesquisar por livros por meio da API do Google Books.
+> Esse é um projeto que consiste em um aplicativo web onde é possível pesquisar por livros por meio da API do Google Books.
 > Na aplicação, você pode adicionar um livro aos favoritos, adicionar uma avaliação (de 1 a 5), uma nota pessoal e tags, e também há a possibilidade de filtrar os livros favoritados por meio das tags.
 
 <img src="https://github.com/carlosfernandescrypt/books-search-app/blob/main/imgs/inicial.png" alt="Pagina inicial">
